@@ -1,0 +1,1401 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Insurance(D2) Form</title>
+    <link rel="icon"href="fav2.png" type="image/jpeg" sizes="">
+</head>
+
+<body onload="storeurl()">
+    <div class="container-fluid " style="background-color: #7c6378; height: auto;">
+        <div class="text-center text-white">
+            <img src="insurance-01.png" class="logo">
+        </div>
+        <div class="text-center" style="margin-top:20px">
+            <form action="https://eeltracklp.leadspediatrack.com/post.do" method="POST" class="msform" id="lp_form">
+                <input type="hidden" name="lp_offer_id" value="4" /> 
+                <fieldset id="home_1">
+                    <div>
+                        <label for="zipcode" class="pb-2">What is your zip code?</label>
+                        <br>
+                        <input type="text" name="zip_code" id="zip_code" placeholder="Enter Zip Code"
+                            class="inputStyle" onclick="detectBrowser()" required />
+                    </div>
+                    <label for="ensured" class="pb-2">Are you currently ensured?</label>
+                    <br>
+                    <select name="currently_insured" id="currently_insured" class="mb-3 inputStyle" required>
+                        <option>Please select value</option>
+                        <option value="Yes">Yes</option>
+                        <option value="No">No</option>
+                    </select>
+                    <br>
+                    <input type="button" name="next" class="next action-button" value="Next" />
+                </fieldset>
+
+                <fieldset id="home_2">
+                    <label for="year" class="pb-2">What year is Your Vehicle?</label>
+                    <br>
+                    <select name="vehicle_model" id="vehicle_model" class="mb-3 inputStyle">
+                        <option value="">Choose Model</option>
+                        <option value="2021">2021</option>
+                        <option value="2020">2020</option>
+                        <option value="2019">2019</option>
+                        <option value="2018">2018</option>
+                        <option value="2017">2017</option>
+                        <option value="2016">2016</option>
+                        <option value="2015">2015</option>
+                        <option value="2014">2014</option>
+                        <option value="2013">2013</option>
+                        <option value="2012">2012</option>
+                        <option value="2011">2011</option>
+                        <option value="2010">2010</option>
+                        <option value="2009">2009</option>
+                        <option value="2008">2008</option>
+                        <option value="2007">2007</option>
+                        <option value="2006">2006</option>
+                        <option value="2005">2005</option>
+                        <option value="2004">2004</option>
+                        <option value="2003">2003</option>
+                        <option value="2002">2002</option>
+                        <option value="2001">2001</option>
+                        <option value="2000">2000</option>
+                        <option value="1999">1999</option>
+                        <option value="1998">1998</option>
+                        <option value="1997">1997</option>
+                        <option value="1996">1996</option>
+                        <option value="1995">1995</option>
+                        <option value="1994">1994</option>
+                        <option value="1993">1993</option>
+                        <option value="1992">1992</option>
+                        <option value="1991">1991</option>
+                        <option value="1990">1990</option>
+                        <option value="1989">1989</option>
+                        <option value="1988">1988</option>
+                        <option value="1987">1987</option>
+                        <option value="1986">1986</option>
+                        <option value="1985">1985</option>
+                        <option value="1984">1984</option>
+                        <option value="1983">1983</option>
+                        <option value="1982">1982</option>
+                        <option value="1981">1981</option>
+                    </select>
+                    <br>
+                    <input type="button" name="next" class="next action-button" value="Next" />
+                </fieldset>
+
+                <fieldset id="home_3">
+                    <label for="make" class="pb-2">What is the make of your vehicle?</label>
+                    <br>
+                    <div class="text-center mb-2">
+                        <input class="btn_choose_sent" style="opacity:0.01" type="radio" name="vehicle_make" id="dodge"
+                            value="Dodge" />
+                        <label class="btn btn-secondary buton" for="dodge"> Dodge </label>
+                        <input class="btn_choose_sent " style="opacity:0.01" type="radio" name="vehicle_make" id="honda"
+                            value="Honda" />
+                        <label class="btn btn-secondary buton" for="honda">Honda</label>
+                        <input class="btn_choose_sent " style="opacity:0.01" type="radio" name="vehicle_make"
+                            id="nissan" value="Nissan" />
+                        <label class="btn btn-secondary buton" for="nissan">Nissan </label>
+                    </div>
+                    <div class="  text-center mb-2">
+                        <input class=" btn_choose_sent " style=" opacity:0.01" type="radio" name="vehicle_make"
+                            id="hyundai" value="Hyundai" />
+                        <label class="btn btn-secondary buton" for="hyundai"> Hyundai </label>
+                        <input class="btn_choose_sent " style="opacity:0.01" type="radio" name="vehicle_make" id="ford"
+                            value="ford" />
+                        <label class="btn btn-secondary buton" for="ford">Ford</label>
+                        <input class="btn_choose_sent " style="opacity:0.01" type="radio" name="vehicle_make"
+                            id="subaru" value="subaru" value="Subaru" />
+                        <label class="btn btn-secondary buton" for="subaru">Subaru </label>
+                    </div>
+                    <div class="  text-center mb-2">
+                        <input class=" btn_choose_sent " style=" opacity:0.01" type="radio" name="vehicle_make"
+                            id="toyota" value="Toyota" />
+                        <label class="btn btn-secondary buton" for="toyota"> Toyota </label>
+                        <input class="btn_choose_sent " style="opacity:0.01" type="radio" name="vehicle_make" id="bmw"
+                            value="BMW" />
+                        <label class="btn btn-secondary buton" for="bmw">BMW</label>
+                        <input class="btn_choose_sent " style="opacity:0.01" type="radio" name="vehicle_make" id="jeep"
+                            value="Jeep" />
+                        <label class="btn btn-secondary buton" for="jeep">Jeep </label>
+                    </div>
+                    <div class="text-center">
+                        <input class=" btn_choose_sent " style=" opacity:0.01" type="radio" name="vehicle_make"
+                            id="mercedes" value="Mercedes" />
+                        <label class="btn btn-secondary buton" for="mercedes">Mercedes </label>
+                        <input class="btn_choose_sent " style="opacity:0.01" type="radio" name="vehicle_make" id="audi"
+                            value="Audi" />
+                        <label class="btn btn-secondary buton" for="audi">Audi</label>
+                        <input class="btn_choose_sent  " style="opacity:0.01" type="radio" name="vehicle_make"
+                            id="others" value="Others" />
+                        <label class="btn btn-secondary buton" for="others">Others </label>
+                    </div>
+                    <input type="button" name="next" class="next action-button" value="Next" />
+                </fieldset>
+
+                <fieldset id="home_4">
+                    <label for="model" class="pb-2">What is the Submodel vehicle model?</label>
+                    <br>
+                    <select name="vehicle_submodel" id="vehicle_submodel" class="mb-3 inputStyle">
+                        <option value="">Choose One</option>
+                        <option value="Accord">Accord</option>
+                        <option value="Civic">Civic</option>
+                        <option value="Del Sol">Del Sol</option>
+                        <option value="Prelude">Prelude</option>
+                    </select>
+                    <br>
+                    <input type="button" name="next" class="next action-button" value="Next" />
+                </fieldset>
+
+                <fieldset id="home_5">
+                    <div class="mb-2">
+                        <label for="vehicle_vin" class="pb-2">What is your Vehicle VIN?</label>
+                        <br>
+                        
+                        <p>Estimations are fine.</p>
+                        <input type="text" name="vehicle_vin" id="vehicle_vin" placeholder="123456"
+                            class="inputStyle" />
+                    </div>
+                    <input type="button" name="next" class="next action-button" value="Next" />
+                </fieldset>
+
+                <fieldset id="home_6">
+                    <label for="model" class="pb-2">What is Driver Relationship?</label>
+                    <br>
+                    <select name="driver_relationship" id="driver_relationship" class="mb-3 inputStyle">
+                        <option value="">Choose One</option>
+                        <option value="Child">Child</option>
+                        <option value="Grandchild">Grandchild</option>
+                        <option value="Grandparent">Grandparent</option>
+                        <option value="Parent">Parent</option>
+                        <option value="Self">Self</option>
+                        <option value="Sibling">Sibling</option>
+                        <option value="Spouse">Spouse</option>
+                        <option value="Other">Other</option>
+                    </select>
+                    <br>
+                    <input type="button" name="next" class="next action-button" value="Next" />
+                </fieldset>
+
+                <fieldset id="home_7">
+                    <div>
+                        <label for="financed" class="pb-2">Is your vehicle financed, owned or leased?</label>
+                        <br>
+                        <input class=" btn_choose_sent " style=" opacity:0.01" type="radio" name="vehicle_ownership"
+                            id="financed" value="financed" />
+                        <label class="btn btn-secondary" for="financed">Financed </label>
+                        <input class="btn_choose_sent " style="opacity:0.01" type="radio" name="vehicle_ownership"
+                            id="owned" value="owned" />
+                        <label class="btn btn-secondary" for="owned">Owned</label>
+                        <input class="btn_choose_sent  " style="opacity:0.01" type="radio" name="vehicle_ownership"
+                            id="leased" value="leased" />
+                        <label class="btn btn-secondary" for="leased">Leased </label>
+                    </div>
+                    <input type="button" name="next" class="next action-button" value="Next" />
+                </fieldset>
+                <fieldset id="home_8" class="text-center">
+                    <div>
+                        <label for="primarlyuse" class="pb-2">How do you primarily use your vehicle?</label>
+                        <br>
+                        <input class=" btn_choose_sent " style=" opacity:0.01" type="radio" name="vehicle_primary_use"
+                            id="business" value="business" />
+                        <label class="btn btn-secondary" for="business" style="height:10vh;">Business</label>
+                        <input class="btn_choose_sent " style="opacity:0.01" type="radio" name="vehicle_primary_use"
+                            id="commuteschool" value="commuteschool" />
+                        <label class="btn btn-secondary" for="commuteschool">Commute School </label><br><br>
+                        <input class="btn_choose_sent  " style="opacity:0.01" type="radio" name="vehicle_primary_use"
+                            id="commutevaries" value="commutevaries" />
+                        <label class="btn btn-secondary" for="commutevaries">Commute Varies</label>
+                        <input class="btn_choose_sent  " style="opacity:0.01" type="radio" name="vehicle_primary_use"
+                            id="commutework" value="commutework" />
+                        <label class="btn btn-secondary" for="commutework">Commute Work</label><br><br>
+                        <input class="btn_choose_sent  " style="opacity:0.01" type="radio" name="vehicle_primary_use"
+                            id="pleasure" value="pleasure">
+                        <label class="btn btn-secondary" for="pleasure">Pleasure</label>
+                    </div>
+                    <input type="button" name="next" class="next action-button" value="Next" />
+                </fieldset>
+                <fieldset id="home_9">
+                    <div>
+                        <label for="miles" class="pb-2">How many miles do you drive each year?</label>
+                        <br>
+                        <p>Estimations are fine.</p>
+                        <input type="text" name="estimated_annual_mileage" id="estimated_annual_mileage" placeholder="1000 miles per year"
+                            class="inputStyle" />
+                    </div>
+                    
+                    <input type="button" name="next" class="next action-button" value="Next" />
+                </fieldset>
+
+                
+
+                <fieldset id="home_10">
+                    <div class="mb-2">
+                        <label for="desiredlevel" class="pb-2">What is your desired level of coverage?</label>
+                        <br>
+                        
+                        <p>Estimations are fine.</p>
+                        <input type="text" name="requested_policy_coverage_type" id="requested_policy_coverage_type" placeholder="1000 Miles"
+                            class="inputStyle" />
+                    </div>
+                    <input type="button" name="next" class="next action-button" value="Next" />
+                </fieldset>
+
+                <fieldset id="home_11">
+                    <div class="mb-2">
+                        <label for="desiredlevel" class="pb-2">What is your Continuous Coverage?</label>
+                        <br>
+                        
+                        <p>Estimations are fine.</p>
+                        <input type="text" name="continuous_coverage" id="continuous_coverage" placeholder="1000 Miles"
+                            class="inputStyle" />
+                    </div>
+                    <input type="button" name="next" class="next action-button" value="Next" />
+                </fieldset>
+
+                <fieldset id="home_12">
+                    <div class="mb-2">
+                        <label for="desiredlevel" class="pb-2">What is your Current Coverage Start Date?</label>
+                        <br>
+                        
+                        <p>Estimations are fine.</p>
+                        <input type="date" name="current_coverage_start_date" id="current_coverage_start_date" placeholder="MM/DD/YYYY"
+                            class="inputStyle" />
+                    </div>
+                    <input type="button" name="next" class="next action-button" value="Next" />
+                </fieldset>
+
+                <fieldset id="home_13">
+                    <div class="mb-2">
+                        <label for="desiredlevel" class="pb-2">What is your Current Coverage End Date?</label>
+                        <br>
+                        
+                        <p>Estimations are fine.</p>
+                        <input type="date" name="current_coverage_end_date" id="current_coverage_end_date" placeholder="MM/DD/YYYY"
+                            class="inputStyle" />
+                    </div>
+                    <input type="button" name="next" class="next action-button" value="Next" />
+                </fieldset>
+
+                <fieldset id="home_14">
+                    <label for="model" class="pb-2">What is your Current Coverage Type?</label>
+                    <br>
+                    <select name="current_coverage_type" id="current_coverage_type" class="mb-3 inputStyle">
+                        <option value="">Choose One</option>
+                        <option value="Preferred">Preferred</option>
+                        <option value="Premium">Premium</option>
+                        <option value="Standard">Standard</option>
+                        <option value="State Minimum">State Minimum</option>
+                    </select>
+                    <br>
+                    <input type="button" name="next" class="next action-button" value="Next" />
+                </fieldset>
+
+                <fieldset id="home_15">
+                    <div class="mb-2">
+                        <label for="desiredlevel" class="pb-2">How Many days Vehicle sre used Per Week?</label>
+                        <br>
+                        
+                        <p>Estimations are fine.</p>
+                        <input type="text" name="vehicle_days_week" id="vehicle_days_week" placeholder="Days"
+                            class="inputStyle" />
+                    </div>
+                    <input type="button" name="next" class="next action-button" value="Next" />
+                </fieldset>
+
+                <fieldset id="home_16">
+                    <div class="mb-2">
+                        <label for="desiredlevel" class="pb-2">What is your Vehicle One Way Distance?</label>
+                        <br>
+                        
+                        <p>Estimations are fine.</p>
+                        <input type="text" name="vehicle_oneway_distance" id="vehicle_oneway_distance" placeholder="100 miles"
+                            class="inputStyle" />
+                    </div>
+                    <input type="button" name="next" class="next action-button" value="Next" />
+                </fieldset>
+
+                <fieldset id="home_17">
+                    <label for="model" class="pb-2">What is your License Status?</label>
+                    <br>
+                    <select name="license_status" id="license_status" class="mb-3 inputStyle">
+                        <option value="">Choose One</option>
+                        <option value="Active">Active</option>
+                        <option value="Suspended">Suspended</option>
+                        <option value="Probation">Probation</option>
+                        <option value="Restricted">Restricted</option>
+                        <option value="Learner Permit">Learner Permit</option>
+                        <option value="Temporary">Temporary</option>
+                        <option value="International">International</option>
+                        <option value="Expired">Expired</option>
+                    </select>
+                    <br>
+                    <input type="button" name="next" class="next action-button" value="Next" />
+                </fieldset>
+
+                <fieldset id="home_18">
+                    <div>
+                        <label for="park" class="pb-2">Where is your vehicle parked at night?</label>
+                        <br>
+                        <input class=" btn_choose_sent " style=" opacity:0.01" type="radio" name="parked_at_night"
+                            id="garage" value="garage" />
+                        <label class="btn btn-secondary" for="garage">Garage </label>
+                        <input class="btn_choose_sent " style="opacity:0.01" type="radio" name="parked_at_night"
+                            id="driveway" value="driveway" />
+                        <label class="btn btn-secondary" for="driveway">Driveway</label>
+                        <input class="btn_choose_sent  " style="opacity:0.01" type="radio" name="parked_at_night"
+                            id="street" value="street" />
+                        <label class="btn btn-secondary" for="street">Street</label>
+                    </div>
+                    <input type="button" name="next" class="next action-button" value="Next" />
+                </fieldset>
+
+                <fieldset id="home_19">
+                    <div>
+                        <label for="interested" class="pb-2">Are you interested in an auto warranty?</label>
+                        <br>
+                        <input class="btn_choose_sent" style="opacity:0.01" type="radio" name="Auto_Warranty"
+                            id="yes" value="Yes" />
+                        <label class="btn btn-secondary" for="yes">Yes</label>
+                        <input class="btn_choose_sent" style="opacity:0.01" type="radio" name="Auto_Warranty" id="no"
+                            value="No" />
+                        <label class="btn btn-secondary" for="no">No</label>
+                    </div>
+                    <input type="button" name="next" class="next action-button" value="Next" />
+                </fieldset>
+
+                <fieldset id="home_20">
+                    <div>
+                        <label for="addanother" class="pb-2">Would you like to add another vehicle?</label>
+                        <br>
+                        <input class="btn_choose_sent  " style="opacity:0.01" type="radio" name="additional_vehicles"
+                            id="ifyes" value="Yes" />
+                        <label class="btn btn-secondary" for="ifyes">Yes</label>
+                        <input class="btn_choose_sent  " style="opacity:0.01" type="radio" name="additional_vehicles"
+                            id="ifno" value="No" />
+                        <label class="btn btn-secondary" for="ifno">No</label>
+                    </div>
+                </fieldset>
+
+                <fieldset id="home_21">
+                    <label for="model" class="pb-2">What year is your vehicle?</label>
+                    <br>
+                    <select name="vehicle_year" id="vehicle_year" class="mb-3 inputStyle">
+                        <option value="">Choose Model</option>
+                        <option value="2021">2021</option>
+                        <option value="2020">2020</option>
+                        <option value="2019">2019</option>
+                        <option value="2018">2018</option>
+                        <option value="2017">2017</option>
+                        <option value="2016">2016</option>
+                        <option value="2015">2015</option>
+                        <option value="2014">2014</option>
+                        <option value="2013">2013</option>
+                        <option value="2012">2012</option>
+                        <option value="2011">2011</option>
+                        <option value="2010">2010</option>
+                        <option value="2009">2009</option>
+                        <option value="2008">2008</option>
+                        <option value="2007">2007</option>
+                        <option value="2006">2006</option>
+                        <option value="2005">2005</option>
+                        <option value="2004">2004</option>
+                        <option value="2003">2003</option>
+                        <option value="2002">2002</option>
+                        <option value="2001">2001</option>
+                        <option value="2000">2000</option>
+                        <option value="1999">1999</option>
+                        <option value="1998">1998</option>
+                        <option value="1997">1997</option>
+                        <option value="1996">1996</option>
+                        <option value="1995">1995</option>
+                        <option value="1994">1994</option>
+                        <option value="1993">1993</option>
+                        <option value="1992">1992</option>
+                        <option value="1991">1991</option>
+                        <option value="1990">1990</option>
+                        <option value="1989">1989</option>
+                        <option value="1988">1988</option>
+                        <option value="1987">1987</option>
+                        <option value="1986">1986</option>
+                        <option value="1985">1985</option>
+                        <option value="1984">1984</option>
+                        <option value="1983">1983</option>
+                        <option value="1982">1982</option>
+                        <option value="1981">1981</option>
+                    </select>
+                    <br>
+                    <input type="button" name="next" class="next action-button" value="Next" />
+                </fieldset>
+
+                <fieldset id="home_22">
+                    <label for="make" class="pb-2">What is the make of your vehicle?</label>
+                    <br>
+                    <div class="  text-center mb-2">
+                        <input class=" btn_choose_sent" style="opacity:0.01" type="radio" name="Vehicle_Make_Two"
+                            id="dodge1" value="dodge">
+                        <label class="btn btn-secondary" for="dodge1"> Dodge </label>
+                        <input class="btn_choose_sent " style="opacity:0.01" type="radio" name="Vehicle_Make_Two"
+                            id="honda1" value="honda"/> <label class="btn btn-secondary" for="honda1">Honda</label>
+                        <input class="btn_choose_sent " style="opacity:0.01" type="radio" name="Vehicle_Make_Two"
+                            id="nissan1" value="nissan">
+                        <label class="btn btn-secondary" for="nissan1">Nissan </label>
+                    </div>
+
+                    <div class="  text-center mb-2">
+                        <input class=" btn_choose_sent " style=" opacity:0.01" type="radio" name="Vehicle_Make_Two"
+                            id="hyundai1" value="hyundai" />
+                        <label class="btn btn-secondary" for="hyundai1"> Hyundai </label>
+                        <input class="btn_choose_sent " style="opacity:0.01" type="radio" name="Vehicle_Make_Two"
+                            id="ford1" value="ford" />
+                        <label class="btn btn-secondary" for="ford1">Ford</label>
+                        <input class="btn_choose_sent " style="opacity:0.01" type="radio" name="Vehicle_Make_Two"
+                            id="subaru1" value="subaru" />
+                        <label class="btn btn-secondary" for="subaru1">Subaru </label>
+                    </div>
+                    <div class="  text-center mb-2">
+                        <input class=" btn_choose_sent " style=" opacity:0.01" type="radio" name="Vehicle_Make_Two"
+                            id="toyota1" value="toyota" />
+                        <label class="btn btn-secondary" for="toyota1"> Toyota </label>
+                        <input class="btn_choose_sent " style="opacity:0.01" type="radio" name="Vehicle_Make_Two"
+                            id="bmw1" value="bmw" />
+                        <label class="btn btn-secondary" for="bmw1">BMW</label>
+                        <input class="btn_choose_sent " style="opacity:0.01" type="radio" name="Vehicle_Make_Two"
+                            id="jeep1" value="jeep" />
+                        <label class="btn btn-secondary" for="jeep1">Jeep </label>
+                    </div>
+                    <div class="  text-center">
+                        <input class=" btn_choose_sent " style=" opacity:0.01" type="radio" name="Vehicle_Make_Two"
+                            id="mercedes1" value="mercedes" />
+                        <label class="btn btn-secondary" for="mercedes1">Mercedes </label>
+                        <input class="btn_choose_sent " style="opacity:0.01" type="radio" name="Vehicle_Make_Two"
+                            id="audi1" value="audi" />
+                        <label class="btn btn-secondary" for="audi1">Audi</label>
+                        <input class="btn_choose_sent  " style="opacity:0.01" type="radio" name="Vehicle_Make_Two"
+                            id="others1" value="others" />
+                        <label class="btn btn-secondary" for="others1">Others </label>
+                    </div>
+                    <input type="button" name="next" class="next action-button" value="Next" />
+                </fieldset>
+
+                <fieldset id="home_23">
+                    <label for="model" class="pb-2">What is the vehicle model?</label>
+                    <br>
+                    <select name="vehicle_submodel_two" id="vehicle_submodel_two" class="mb-3 inputStyle">
+                        <option value="">Choose One</option>
+                        <option value="Accord">Accord</option>
+                        <option value="Civic">Civic</option>
+                        <option value="Del Sol">Del Sol</option>
+                        <option value="Prelude">Prelude</option>
+                    </select>
+                    <br>
+                    <input type="button" name="next" class="next action-button" value="Next" />
+                </fieldset>
+
+                <fieldset id="home_24">
+                    <label for="model" class="pb-2">Who is your current insurance provider?</label>
+                    <br>
+                    <select name="current_insurance_company" id="current_insurance_company" class="mb-3 inputStyle">
+                        <option value="">Choose One</option>
+                        <option value="Not Insured at This Time">Not Insured at This Time</option>
+                        <option value="Other">Other</option>
+                        <option value="21st Century Insurance">21st Century Insurance</option>
+                        <option value="AAA Insurance Co">AAA Insurance Co</option>
+                        <option value="AARP">AARP</option>
+                        <option value="AETNA">AETNA</option>
+                        <option value="AFLAC">AFLAC</option>
+                        <option value="AIG">AIG</option>
+                        <option value="AIU Insurance">AIU Insurance</option>
+                        <option value="Allied">Allied</option>
+                        <option value="Allstate">Allstate</option>
+                        <option value="Allstate County Mutual">Allstate County Mutual</option>
+                        <option value="Allstate Indemnity">Allstate Indemnity</option>
+                        <option value="Allstate Insurance">Allstate Insurance</option>
+                        <option value="American Alliance Insurance">American Alliance Insurance</option>
+                        <option value="American Automobile Insurance">American Automobile Insurance</option>
+                        <option value="American Casualty">American Casualty</option>
+                        <option value="American Deposit Insurance">American Deposit Insurance</option>
+                        <option value="American Direct Business Insurance">American Direct Business Insurance</option>
+                        <option value="American Empire Insurance">American Empire Insurance</option>
+                        <option value="American Family">American Family</option>
+                        <option value="American Family Insurance">American Family Insurance</option>
+                        <option value="American Family Mutual">American Family Mutual</option>
+                        <option value="American Financial">American Financial</option>
+                        <option value="American Health Underwriters">American Health Underwriters</option>
+                        <option value="American Home Assurance">American Home Assurance</option>
+                        <option value="American Insurance">American Insurance</option>
+                        <option value="American International Ins">American International Ins</option>
+                        <option value="American International Pacific">American International Pacific</option>
+                        <option value="American International South">American International South</option>
+                        <option value="American Manufacturers">American Manufacturers</option>
+                        <option value="American Mayflower Insurance">American Mayflower Insurance</option>
+                        <option value="American Motorists Insurance">American Motorists Insurance</option>
+                        <option value="American National Insurance">American National Insurance</option>
+                        <option value="American Premier Insurance">American Premier Insurance</option>
+                        <option value="American Protection Insurance">American Protection Insurance</option>
+                        <option value="American Republic">American Republic</option>
+                        <option value="American Savers Plan">American Savers Plan</option>
+                        <option value="American Service Insurance">American Service Insurance</option>
+                        <option value="American Skyline Insurance Company">American Skyline Insurance Company</option>
+                        <option value="American Spirit Insurance">American Spirit Insurance</option>
+                        <option value="American Standard Insurance - OH">American Standard Insurance - OH</option>
+                        <option value="American Standard Insurance - WI">American Standard Insurance - WI</option>
+                        <option value="AmeriPlan">AmeriPlan</option>
+                        <option value="Amica Insurance">Amica Insurance</option>
+                        <option value="Answer Financial">Answer Financial</option>
+                        <option value="Arbella">Arbella</option>
+                        <option value="Associated Indemnity">Associated Indemnity</option>
+                        <option value="Assurant">Assurant</option>
+                        <option value="Atlanta Casualty">Atlanta Casualty</option>
+                        <option value="Atlantic Indemnity">Atlantic Indemnity</option>
+                        <option value="Auto Club Insurance Company">Auto Club Insurance Company</option>
+                        <option value="AXA Advisors">AXA Advisors</option>
+                        <option value="Bankers Life and Casualty">Bankers Life and Casualty</option>
+                        <option value="Banner Life">Banner Life</option>
+                        <option value="Best Agency USA">Best Agency USA</option>
+                        <option value="Blue Cross and Blue Shield">Blue Cross and Blue Shield</option>
+                        <option value="Brooke Insurance	">Brooke Insurance </option>
+                        <option value="Cal Farm Insurance">Cal Farm Insurance</option>
+                        <option value="California State Automobile Association">California State Automobile Association
+                        </option>
+                        <option value="Chubb">Chubb</option>
+                        <option value="Citizens">Citizens</option>
+                        <option value="Clarendon American Insurance">Clarendon American Insurance</option>
+                        <option value="Clarendon National Insurance">Clarendon National Insurance</option>
+                        <option value="CNA">CNA</option>
+                        <option value="Colonial Insurance">Colonial Insurance</option>
+                        <option value="Comparison Market">Comparison Market</option>
+                        <option value="Continental Casualty">Continental Casualty</option>
+                        <option value="Continental Divide Insurance">Continental Divide Insurance</option>
+                        <option value="Continental Insurance">Continental Insurance</option>
+                        <option value="Cotton States Insurance">Cotton States Insurance</option>
+                        <option value="Country Financial">Country Financial</option>
+                        <option value="Country Insurance and Financial Services">Country Insurance and Financial
+                            Services</option>
+                        <option value="Countrywide Insurance">Countrywide Insurance</option>
+                        <option value="CSE Insurance Group">CSE Insurance Group</option>
+                        <option value="Dairyland County Mutual Co of TX">Dairyland County Mutual Co of TX</option>
+                        <option value="Dairyland Insurance">Dairyland Insurance</option>
+                        <option value="eHealthInsurance Services">eHealthInsurance Services</option>
+                        <option value="Electric Insurance">Electric Insurance</option>
+                        <option value="Erie Insurance Company">Erie Insurance Company</option>
+                        <option value="Erie Insurance Exchange">Erie Insurance Exchange</option>
+                        <option value="Erie Insurance Group">Erie Insurance Group</option>
+                        <option value="Erie Insurance Property and Casualty">Erie Insurance Property and Casualty
+                        </option>
+                        <option value="Esurance">Esurance</option>
+                        <option value="Farm Bureau">Farm Bureau</option>
+                        <option value="Farm Bureau/Farm Family/Rural">Farm Bureau/Farm Family/Rural</option>
+                        <option value="Farmers Insurance">Farmers Insurance</option>
+                        <option value="Farmers Insurance Exchange">Farmers Insurance Exchange</option>
+                        <option value="Farmers TX County Mutual">Farmers TX County Mutual</option>
+                        <option value="Farmers Union">Farmers Union</option>
+                        <option value="FinanceBox.com">FinanceBox.com</option>
+                        <option value="Fire and Casualty Insurance Co of CT">Fire and Casualty Insurance Co of CT
+                        </option>
+                        <option value="Foremost">Foremost</option>
+                        <option value="Foresters">Foresters</option>
+                        <option value="Geico">Geico</option>
+                        <option value="Geico Casualty">Geico Casualty</option>
+                        <option value="Geico General Insurance">Geico General Insurance</option>
+                        <option value="Geico Indemnity">Geico Indemnity</option>
+                        <option value="GMAC Insurance">GMAC Insurance</option>
+                        <option value="Golden Rule Insurance">Golden Rule Insurance</option>
+                        <option value="Government Employees Insurance">Government Employees Insurance</option>
+                        <option value="Guaranty National Insurance">Guaranty National Insurance</option>
+                        <option value="Guide One Insurance">Guide One Insurance</option>
+                        <option value="Hartford Accident and Indemnity">Hartford Accident and Indemnity</option>
+                        <option value="Hartford Casualty Insurance">Hartford Casualty Insurance</option>
+                        <option value="Hartford Fire Insurance">Hartford Fire Insurance</option>
+                        <option value="Hartford Insurance Co of Illinois">Hartford Insurance Co of Illinois</option>
+                        <option value="Hartford Insurance Co of the Southeast">Hartford Insurance Co of the Southeast
+                        </option>
+                        <option value="Hartford Omni">Hartford Omni</option>
+                        <option value="Hartford Underwriters Insurance">Hartford Underwriters Insurance</option>
+                        <option value="Health Benefits Direct">Health Benefits Direct</option>
+                        <option value="Health Choice One">Health Choice One</option>
+                        <option value="Health Plus of America">Health Plus of America</option>
+                        <option value="HealthShare American">HealthShare American</option>
+                        <option value="Humana">Humana</option>
+                        <option value="IFA Auto Insurance">IFA Auto Insurance</option>
+                        <option value="IGF Insurance">IGF Insurance</option>
+                        <option value="Infinity Insurance">Infinity Insurance</option>
+                        <option value="Infinity National Insurance">Infinity National Insurance</option>
+                        <option value="Infinity Select Insurance">Infinity Select Insurance</option>
+                        <option value="Insurance Insight">Insurance Insight</option>
+                        <option value="Insurance.com">Insurance.com</option>
+                        <option value="InsuranceLeads.com">InsuranceLeads.com</option>
+                        <option value="InsWeb">InsWeb</option>
+                        <option value="Integon">Integon</option>
+                        <option value="John Hancock">John Hancock</option>
+                        <option value="Kaiser Permanente">Kaiser Permanente</option>
+                        <option value="Kemper Lloyds Insurance">Kemper Lloyds Insurance</option>
+                        <option value="Landmark American Insurance">Landmark American Insurance</option>
+                        <option value="Leader National Insurance">Leader National Insurance</option>
+                        <option value="Leader Preferred Insurance">Leader Preferred Insurance</option>
+                        <option value="Leader Specialty Insurance">Leader Specialty Insurance</option>
+                        <option value="Liberty Insurance Corp">Liberty Insurance Corp</option>
+                        <option value="Liberty Mutual">Liberty Mutual</option>
+                        <option value="Liberty Mutual Fire Insurance">Liberty Mutual Fire Insurance</option>
+                        <option value="Liberty Mutual Insurance">Liberty Mutual Insurance</option>
+                        <option value="Liberty National">Liberty National</option>
+                        <option value="Liberty Northwest Insurance">Liberty Northwest Insurance</option>
+                        <option value="Lumbermens Mutual">Lumbermens Mutual</option>
+                        <option value="Maryland Casualty">Maryland Casualty</option>
+                        <option value="Mass Mutual">Mass Mutual</option>
+                        <option value="Mega/Midwest">Mega/Midwest</option>
+                        <option value="Mercury">Mercury</option>
+                        <option value="MetLife">MetLife</option>
+                        <option value="MetLife Auto and Home">MetLife Auto and Home</option>
+                        <option value="Metropolitan Insurance Co.">Metropolitan Insurance Co.</option>
+                        <option value="Mid Century Insurance">Mid Century Insurance</option>
+                        <option value="Mid-Continent Casualty">Mid-Continent Casualty</option>
+                        <option value="Middlesex Insurance">Middlesex Insurance</option>
+                        <option value="Midland National Life">Midland National Life</option>
+                        <option value="Mutual of New York">Mutual of New York</option>
+                        <option value="Mutual Of Omaha">Mutual Of Omaha</option>
+                        <option value="National Ben Franklin Insurance">National Ben Franklin Insurance</option>
+                        <option value="National Casualty">National Casualty</option>
+                        <option value="National Continental Insurance">National Continental Insurance</option>
+                        <option value="National Fire Insurance Company of Hartford">National Fire Insurance Company of
+                            Hartford</option>
+                        <option value="National Health Insurance">National Health Insurance</option>
+                        <option value="National Indemnity">National Indemnity</option>
+                        <option value="National Union Fire Insurance of LA">National Union Fire Insurance of LA</option>
+                        <option value="National Union Fire Insurance of PA">National Union Fire Insurance of PA</option>
+                        <option value="Nationwide">Nationwide</option>
+                        <option value="Nationwide General Insurance">Nationwide General Insurance</option>
+                        <option value="Nationwide Insurance Company">Nationwide Insurance Company</option>
+                        <option value="Nationwide Mutual Fire Insurance">Nationwide Mutual Fire Insurance</option>
+                        <option value="Nationwide Mutual Insurance">Nationwide Mutual Insurance</option>
+                        <option value="Nationwide Property and Casualty">Nationwide Property and Casualty</option>
+                        <option value="New England Financial">New England Financial</option>
+                        <option value="New York Life Insurance">New York Life Insurance</option>
+                        <option value="Northwestern Mutual Life">Northwestern Mutual Life</option>
+                        <option value="Northwestern Pacific Indemnity">Northwestern Pacific Indemnity</option>
+                        <option value="Omni Indemnity">Omni Indemnity</option>
+                        <option value="Omni Insurance">Omni Insurance</option>
+                        <option value="Orion Insurance">Orion Insurance</option>
+                        <option value="Pacific Indemnity">Pacific Indemnity</option>
+                        <option value="Pacific Insurance">Pacific Insurance</option>
+                        <option value="Pafco General Insurance">Pafco General Insurance</option>
+                        <option value="Patriot General Insurance">Patriot General Insurance</option>
+                        <option value="Peak Property and Casualty Insurance">Peak Property and Casualty Insurance
+                        </option>
+                        <option value="PEMCO Insurance">PEMCO Insurance</option>
+                        <option value="Physicians">Physicians</option>
+                        <option value="Progressive">Progressive</option>
+                        <option value="Progressive Insurance">Progressive Insurance</option>
+                        <option value="Progressive Auto Pro">Progressive Auto Pro</option>
+                        <option value="Prudential">Prudential</option>
+                        <option value="Prudential Insurance Co.">Prudential Insurance Co.</option>
+                        <option value="Reliance Insurance">Reliance Insurance</option>
+                        <option value="Reliance National Indemnity">Reliance National Indemnity</option>
+                        <option value="Reliance National Insurance">Reliance National Insurance</option>
+                        <option value="Republic Indemnity">Republic Indemnity</option>
+                        <option value="Response Insurance">Response Insurance</option>
+                        <option value="SAFECO">SAFECO</option>
+                        <option value="Safeway Insurance">Safeway Insurance</option>
+                        <option value="Safeway Insurance Co of AL">Safeway Insurance Co of AL</option>
+                        <option value="Safeway Insurance Co of GA">Safeway Insurance Co of GA</option>
+                        <option value="Safeway Insurance Co of LA">Safeway Insurance Co of LA</option>
+                        <option value="Security Insurance Co of Hartford">Security Insurance Co of Hartford</option>
+                        <option value="Security National Insurance Co of FL">Security National Insurance Co of FL
+                        </option>
+                        <option value="Sentinel Insurance">Sentinel Insurance</option>
+                        <option value="Sentry Insurance a Mutual Company">Sentry Insurance a Mutual Company</option>
+                        <option value="Sentry Insurance Group">Sentry Insurance Group</option>
+                        <option value="Shelter Insurance Co.">Shelter Insurance Co.</option>
+                        <option value="St. Paul">St. Paul</option>
+                        <option value="St. Paul Fire and Marine">St. Paul Fire and Marine</option>
+                        <option value="St. Paul Insurance">St. Paul Insurance</option>
+                        <option value="Standard Fire Insurance Company">Standard Fire Insurance Company</option>
+                        <option value="State and County Mutual Fire Insurance">State and County Mutual Fire Insurance
+                        </option>
+                        <option value="State Farm">State Farm</option>
+                        <option value="State Farm County">State Farm County</option>
+                        <option value="State Farm Fire and Cas">State Farm Fire and Cas</option>
+                        <option value="State Farm General">State Farm General</option>
+                        <option value="State Farm Indemnity">State Farm Indemnity</option>
+                        <option value="State Farm Insurance Co.">State Farm Insurance Co.</option>
+                        <option value="State Farm Lloyds Tx">State Farm Lloyds Tx</option>
+                        <option value="State Farm Mutual Auto">State Farm Mutual Auto</option>
+                        <option value="State Fund">State Fund</option>
+                        <option value="State National Insurance">State National Insurance</option>
+                        <option value="Superior American Insurance">Superior American Insurance</option>
+                        <option value="Superior Guaranty Insurance">Superior Guaranty Insurance</option>
+                        <option value="Superior Insurance">Superior Insurance</option>
+                        <option value="Sure Health Plans">Sure Health Plans</option>
+                        <option value="The Ahbe Group">The Ahbe Group</option>
+                        <option value="The General">The General</option>
+                        <option value="The Hartford">The Hartford</option>
+                        <option value="TICO Insurance">TICO Insurance</option>
+                        <option value="TIG Countrywide Insurance">TIG Countrywide Insurance</option>
+                        <option value="Titan">Titan</option>
+                        <option value="TransAmerica">TransAmerica</option>
+                        <option value="Travelers Indemnity">Travelers Indemnity</option>
+                        <option value="Travelers Insurance Company">Travelers Insurance Company</option>
+                        <option value="Tri-State Consumer Insurance">Tri-State Consumer Insurance</option>
+                        <option value="Twin City Fire Insurance">Twin City Fire Insurance</option>
+                        <option value="UniCare">UniCare</option>
+                        <option value="United American/Farm and Ranch">United American/Farm and Ranch</option>
+                        <option value="United Pacific Insurance">United Pacific Insurance</option>
+                        <option value="United Security">United Security</option>
+                        <option value="United Services Automobile Association">United Services Automobile Association
+                        </option>
+                        <option value="Unitrin Direct">Unitrin Direct</option>
+                        <option value="Universal Underwriters Insurance">Universal Underwriters Insurance</option>
+                        <option value="US Financial">US Financial</option>
+                        <option value="USA Benefits/Continental General">USA Benefits/Continental General</option>
+                        <option value="USAA">USAA</option>
+                        <option value="USF and G">USF and G</option>
+                        <option value="Viking County Mutual Insurance">Viking County Mutual Insurance</option>
+                        <option value="Viking Insurance Co of WI">Viking Insurance Co of WI</option>
+                        <option value="Wawanesa">Wawanesa</option>
+                        <option value="Western and Southern Life">Western and Southern Life</option>
+                        <option value="Western Mutual">Western Mutual</option>
+                        <option value="Windsor Insurance">Windsor Insurance</option>
+                        <option value="Woodlands Financial Group">Woodlands Financial Group</option>
+                        <option value="	Zurich North America"> Zurich North America</option>
+                    </select>
+                    <br>
+                    <input type="button" name="next" class="next action-button" value="Next" />
+                </fieldset>
+
+                <fieldset id="home_25">
+                    <div class="mb-2">
+                        <label for="military" class="pb-2">Have you or your spouse served in the military?</label>
+                        <br>
+                        <input class="btn_choose_sent  " style="opacity:0.01" type="radio" name="serve_in_military"
+                            id="military" value="yes" />
+                        <label class="btn btn-secondary" for="military">Yes</label>
+                        <input class="btn_choose_sent  " style="opacity:0.01" type="radio" name="serve_in_military" id="military1"
+                            value="no" />
+                        <label class="btn btn-secondary" for="military1">No</label>
+                    </div>
+                    <input type="button" name="next" class="next action-button" value="Next" />
+                </fieldset>
+
+                <fieldset id="home_26">
+                    <div class="mb-2">
+                        <label for="military" class="pb-2">Have you had a bankruptcy/foreclosure in the past 3 years?</label>
+                        <br>
+                        <input class="btn_choose_sent" style="opacity:0.01" type="radio" name="bank_foreclosure_in_last_3_years"
+                            id="Yes" value="Yes"/>
+                        <label class="btn btn-secondary" for="Yes">Yes</label>
+                        <input class="btn_choose_sent  " style="opacity:0.01" type="radio" name="bank_foreclosure_in_last_3_years" id="No"
+                            value="No" />
+                        <label class="btn btn-secondary" for="No">No</label>
+                    </div>
+                    <input type="button" name="next" class="next action-button" value="Next" />
+                </fieldset>
+
+                <fieldset id="home_27">
+                    <div class="mb-2">
+                        <label for="military" class="pb-2">Are you Currently Employed?</label>
+                        <br>
+                        <input class="btn_choose_sent" style="opacity:0.01" type="radio" name="currently_employed"
+                            id="currently_employedYes" value="Yes"/>
+                        <label class="btn btn-secondary" for="currently_employedYes">Yes</label>
+                        <input class="btn_choose_sent" style="opacity:0.01" type="radio" name="currently_employed" id="currently_employedNo"
+                            value="No" />
+                        <label class="btn btn-secondary" for="currently_employedNo">No</label>
+                    </div>
+                    <input type="button" name="next" class="next action-button" value="Next" />
+                </fieldset>
+
+                <fieldset id="home_28">
+                    <div>
+                        <label for="gender" class="pb-2">Gender</label>
+                        <br>
+                        <input class="btn_choose_sent  " style="opacity:0.01" type="radio" name="gender" id="male"
+                            value="male" />
+                        <label class="btn btn-secondary" for="male">Male</label>
+                        <input class="btn_choose_sent  " style="opacity:0.01" type="radio" name="gender" id="female"
+                            value="female" />
+                        <label class="btn btn-secondary" for="female">Female</label>
+                        <input class="btn_choose_sent  " style="opacity:0.01" type="radio" name="gender"
+                            id="Others" value="Others" />
+                        <label class="btn btn-secondary" for="Others">Others</label>
+                    </div>
+                    <input type="button" name="next" class="next action-button" value="Next" />
+                </fieldset>
+                <fieldset id="home_29">
+                    <div>
+                        <label for="marital_status" class="pb-2">Marital Status</label>
+                        <br>
+                        <input class="btn_choose_sent" style="opacity:0.01" type="radio" name="marital_status"
+                            id="married" value="married" />
+                        <label class="btn btn-secondary" for="married">Married</label>
+                        <input class="btn_choose_sent  " style="opacity:0.01" type="radio" name="marital_status"
+                            id="Divorced" value="Divorced" />
+                        <label class="btn btn-secondary" for="Divorced">Divorced</label>
+                        <input class="btn_choose_sent  " style="opacity:0.01" type="radio" name="marital_status"
+                            id="Single" value="Single" />
+                        <label class="btn btn-secondary" for="Single">Single</label> <br><br>
+                        <input class="btn_choose_sent  " style="opacity:0.01" type="radio" name="marital_status"
+                            id="Widowed" value="Widowed" />
+                        <label class="btn btn-secondary" for="Widowed">Widowed</label>
+                        <input class="btn_choose_sent" style="opacity:0.01" type="radio" name="marital_status"
+                            id="Separated" value="Separated" />
+                        <label class="btn btn-secondary" for="Separated">Separated</label>
+                        <input class="btn_choose_sent" style="opacity:0.01" type="radio" name="marital_status"
+                            id="Other" value="Other" />
+                        <label class="btn btn-secondary" for="Other">Other</label>
+                    </div>
+                    <input type="button" name="next" class="next action-button" value="Next" />
+                </fieldset>
+                <fieldset id="home_30">
+                    <label for="model" class="pb-2">Education Level</label>
+                    <br>
+                    <select name="education" id="education" class="mb-3 inputStyle">
+                        <option value="">Choose One</option>
+                        <option value="Associate Degree">Associate Degree</option>
+                        <option value="Bachelors Degree">Bachelors Degree</option>
+                        <option value="Doctorate Degree">Doctorate Degree</option>
+                        <option value="High School Diploma">High School Diploma</option>
+                        <option value="Less than High School">Less than High School</option>
+                        <option value="Masters Degree">Masters Degree</option>
+                        <option value="Some College">Some College</option>
+                        <option value="Some or No High School">Some or No High School</option>
+                        <option value="Unknown">Unknown</option>
+                    </select>
+                    <br>
+                    <input type="button" name="next" class="next action-button" value="Next" />
+                </fieldset>
+                <fieldset id="home_31">
+                    <label for="model" class="pb-2">Occupation</label>
+                    <br>
+                    <select name="occupation" id="occupation" class="mb-3 inputStyle">
+                        <option value="">Choose One</option>
+                        <option value="Administrative">Administrative</option>
+                        <option value="Architect">Architect</option>
+                        <option value="Business Owner">Business Owner</option>
+                        <option value="Clergy/Religious">Clergy/Religious</option>
+                        <option value="Disabled">Disabled</option>
+                        <option value="Engineer">Engineer</option>
+                        <option value="Finance">Finance</option>
+                        <option value="Healthcare">HealthCare</option>
+                        <option value="Homemaker">Homemaker</option>
+                        <option value="Humanresources">Human Resources</option>
+                        <option value="Lawyer">Lawyer</option>
+                        <option value="Marketing & Sales">Marketing & Sales</option>
+                        <option value="Military">Military</option>
+                        <option value="Retired">Retired</option>
+                        <option value="Scientist">Scientist</option>
+                        <option value="Self_Employed">Self_Employed</option>
+                        <option value="Student">Student</option>
+                        <option value="Unemployed">Unemployed</option>
+                        <option value="Other">Other</option>
+                    </select>
+                    <br>
+                    <input type="button" name="next" class="next action-button" value="Next" />
+                </fieldset>
+                <fieldset id="home_32">
+                    <div class="mb-2">
+                        <label for="credit" class="pb-2">Credit Rating</label>
+                        <br>
+                        <input class=" btn_choose_sent " style=" opacity:0.01" type="radio" name="credit" id="excellent"
+                            value="excellent" />
+                        <label class="btn btn-secondary" for="excellent">Excellent</label>
+                        <input class="btn_choose_sent " style="opacity:0.01" type="radio" name="credit" id="good"
+                            value="good" />
+                        <label class="btn btn-secondary" for="good">Good</label><br><br>
+                        <input class="btn_choose_sent  " style="opacity:0.01" type="radio" name="credit" id="average"
+                            value="average" /> 
+                        <label class="btn btn-secondary" for="average">Average</label>
+                        <input class="btn_choose_sent  " style="opacity:0.01" type="radio" name="credit" id="poor"
+                            value="poor" />
+                        <label class="btn btn-secondary" for="poor">Poor</label>
+                    </div>
+                    <input type="button" name="next" class="next action-button" value="Next" />
+                </fieldset>
+                <fieldset id="home_33">
+                    <div class="mb-2">
+                        <label for="pastaccident" class="pb-2">In the past 3 years, have you had any accidents?</label>
+                        <br>
+                        <input class="btn_choose_sent" style="opacity:0.01" type="radio" name="incident" id="accident"
+                            value="Yes" />
+                        <label class="btn btn-secondary" for="accident">Yes</label>
+                        <input class="btn_choose_sent  " style="opacity:0.01" type="radio" name="incident" id="noaccident"
+                            value="No" />
+                        <label class="btn btn-secondary" for="noaccident">No</label>
+                    </div>
+                    <input type="button" name="next" class="next action-button" value="Next" />
+                </fieldset>
+                <fieldset id="home_34">
+                    
+                   
+                    <label for="datepicker" class="pb-2">Date of your First Accident?</label>
+                    <br>
+                    <input type="date" name="incident_date_one" id="incident_date_one" placeholder="dd/mm/yyyy"
+                        class="inputStyle" />
+                    <br>
+                    <input type="button" name="next" class="next action-button" value="Next" />
+                </fieldset>
+                <fieldset id="home_35">
+                    
+                    <label for="incident_date_2" class="pb-2">Date of your Second Accident?</label>
+                    <br>
+                    <input type="date" name="incident_date_2" id="incident_date_2" placeholder="dd/mm/yyyy"
+                        class="inputStyle" />
+                    <br>
+                    <input type="button" name="next" class="next action-button" value="Next" />
+                </fieldset>
+
+                <fieldset id="home_36">
+                    
+                    <label for="accident_two" class="pb-2">How many Tickets or Claims in Last Three Years?</label>
+                    <br>
+                    <input type="text" name="tickets_or_claims_in_last_three_years" id="tickets_or_claims_in_last_three_years" placeholder="years"
+                        class="inputStyle" />
+                    <br>
+                    <input type="button" name="next" class="next action-button" value="Next" />
+                </fieldset>
+
+                <fieldset id="home_37">
+                    <div class="mb-2">
+                        <label for="requires_sr22" class="pb-2">Do you require an SR22?</label>
+                        <br>
+                        <input class="btn_choose_sent  " style="opacity:0.01" type="radio" name="requires_sr22"
+                            id="sr22" value="sr22" />
+                        <label class="btn btn-secondary" for="sr22">Yes</label>
+                        <input class="btn_choose_sent  " style="opacity:0.01" type="radio" name="requires_sr22"
+                            id="nosr22" value="nosr22" />
+                        <label class="btn btn-secondary" for="nosr22">No</label>
+                    </div>
+                    <input type="button" name="next" class="next action-button" value="Next" />
+                </fieldset>
+                <fieldset id="home_38">
+                    <div class="mb-2">
+                        <label for="license_status	" class="pb-2">Status of License</label>
+                        <br>
+                        <input class=" btn_choose_sent " style=" opacity:0.01" type="radio" name="license_status	"
+                            id="Active" value="Active" />
+                        <label class="btn btn-secondary" for="Active">Active</label>
+                        <input class="btn_choose_sent " style="opacity:0.01" type="radio" name="license_status	"
+                            id="Suspended" value="Suspended" />
+                        <label class="btn btn-secondary" for="Suspended">Suspended</label><br><br>
+                        <input class="btn_choose_sent  " style="opacity:0.01" type="radio" name="license_status	"
+                            id="Probation" value="Probation" />
+                        <label class="btn btn-secondary" for="Probation">&nbsp;Probationxd</label>
+                        <input class="btn_choose_sent  " style="opacity:0.01" type="radio" name="license_status	"
+                            id="Restricted" value="Restricted" />
+                        <label class="btn btn-secondary" for="Restricted">Restricted</label><br><br>
+                        <input class="btn_choose_sent  " style="opacity:0.01" type="radio" name="license_status	"
+                            id="Learner Permit" value="Learner Permit" />
+                        <label class="btn btn-secondary" for="Learner Permit">Temporary</label>
+                        <input class="btn_choose_sent  " style="opacity:0.01" type="radio" name="license_status	"
+                            id="Temporary" value="Temporary" />
+                        <label class="btn btn-secondary" for="Temporary">Temporary</label><br><br>
+                        <input class="btn_choose_sent  " style="opacity:0.01" type="radio" name="license_status	"
+                            id="International" value="International" />
+                        <label class="btn btn-secondary" for="International">International</label>
+                        <input class="btn_choose_sent " style="opacity:0.01" type="radio" name="license_status	"
+                            id="Expired" value="Expired" />
+                        <label class="btn btn-secondary" for="Expired">Expired</label>
+                    </div>
+                    <input type="button" name="next" class="next action-button" value="Next" />
+                </fieldset>
+                <fieldset id="home_39"> 
+                    <br>
+                    <label for="datepicker" class="pb-2">What is your Date of Birth?</label>
+                    <br>
+                    <input type="date" name="dob" id="dob" placeholder="dd/mm/yyyy"
+                        class="inputStyle" />
+                    <br>
+                    
+                    <input type="button" name="next" class="next action-button" value="Next" />
+                </fieldset>
+                
+                <fieldset id="home_40">
+                    <div>
+                        <label for="you_homeowner" class="pb-2">Are you a homeowner?</label>
+                        <br>
+                        <input class="btn_choose_sent  " style="opacity:0.01" type="radio" name="homeowner" id="homeowner"
+                            value="yes" />
+                        <label class="btn btn-secondary" for="homeowner">Yes</label>
+                        <input class="btn_choose_sent  " style="opacity:0.01" type="radio" name="homeowner" id="nothomeowner"
+                            value="no" />
+                        <label class="btn btn-secondary" for="nothomeowner">No</label>
+                    </div>
+                    <input type="button" name="next" class="next action-button" value="Next" />
+                </fieldset>
+
+                <fieldset id="home_41">
+                    <div>
+                        <label for="model" class="pb-2">What is your Residence Status?</label>
+                        <br>
+                        <input class="btn_choose_sent" style="opacity:0.01" type="radio" name="residence_status" id="Rent"
+                            value="Rent" />
+                        <label class="btn btn-secondary" for="Rent">Rent</label>
+                        <input class="btn_choose_sent" style="opacity:0.01" type="radio" name="residence_status" id="Own"
+                            value="Own" />
+                        <label class="btn btn-secondary" for="Own">Own</label>
+                        <input class="btn_choose_sent" style="opacity:0.01" type="radio" name="residence_status"
+                            id="Others" value="Others" />
+                        <label class="btn btn-secondary" for="Others">Others</label>
+                    </div>
+                    <br>
+                    <input type="button" name="next" class="next action-button" value="Next" />
+                </fieldset>
+
+                <fieldset id="home_42">
+                    <label for="model" class="pb-2">How many Years at Current Residence?</label>
+                    <br>
+                    <select name="years_at_current_residence" id="years_at_current_residence" class="mb-3 inputStyle">
+                        <option value="">Choose One</option>
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6+">6+</option>
+                    </select>
+                    <br>
+                    <input type="button" name="next" class="next action-button" value="Next" />
+                </fieldset>
+
+                <fieldset id="home_43">
+                    <div>
+                        <label for="heading" class="pb-2">Are you interested in saving on homeowners insurance?</label>
+                        <br>
+                        <input class="btn_choose_sent" style="opacity:0.01" type="radio" name="homeowner_insurance"
+                            id="interested" value="interested" />
+                        <label class="btn btn-secondary" for="interested">Yes</label>
+                        <input class="btn_choose_sent  " style="opacity:0.01" type="radio" name="homeowner_insurance"
+                            id="notinterested" value="no" />
+                        <label class="btn btn-secondary" for="notinterested">No</label>
+                    </div>
+                    <br>
+                    <input type="button" name="next" class="next action-button" value="Next" />
+                </fieldset>
+                <fieldset id="home_44">
+                    <div>
+                        <label for="miles" class="pb-2">What type of property do you own?</label>
+                        <br>
+                        <input class="btn_choose_sent  " style="opacity:0.01" type="radio" name="type_of_property"
+                            id="singlefamily" value="singlefamily" />
+                        <label class="btn btn-secondary" for="singlefamily">Single Family</label>
+                        <input class="btn_choose_sent  " style="opacity:0.01" type="radio" name="type_of_property"
+                            id="townhouse" value="townhouse">
+                        <label class="btn btn-secondary" for="townhouse">Townhouse</label>
+                        <input class="btn_choose_sent  " style="opacity:0.01" type="radio" name="type_of_property"
+                            id="mobilehome" value="mobilehome" />
+                        <label class="btn btn-secondary" for="mobilehome">Mobile Home</label>
+                        <input class="btn_choose_sent  " style="opacity:0.01" type="radio" name="type_of_property"
+                            id="manufactured" value="manufactured">
+                        <label class="btn btn-secondary" for="manufactured">Manufactured</label>
+                    </div>
+                    <br>
+                    <input type="button" name="next" class="next action-button" value="Next" />
+                </fieldset>
+                <fieldset id="home_45">
+                    <div>
+                        <label for="home_built_year" class="pb-2">What year was your home built?</label>
+                        <br>
+                        <input type="text" placeholder="Home Built" class="inputStyle mb-2" id="home_built_year"
+                            name="home_built_year">
+                    </div>
+                    <br>
+                    <input type="button" name="next" class="next action-button" value="Next" />
+                </fieldset>
+                <fieldset id="home_46">
+                    <div>
+                        <input type="text" placeholder="First Name" class="inputStyle mb-2" id="first_name"
+                            name="first_name">
+                        <br>
+                        <input type="text" placeholder="Last Name" class="inputStyle mb-2" id="last_name"
+                            name="last_name">
+                    </div>
+                    <br>
+                    <input type="button" name="next" class="next action-button" value="Next" />
+                </fieldset>
+                <fieldset id="home_47">
+                    <div>
+                        <label for="info" class="pb-2">Extra Information</label>
+                        <br>
+                        <input type="text" placeholder="Email" class="inputStyle mb-2" id="email_address"
+                            name="email_address">
+                        <br>
+                        <input type="text" placeholder="Phone Home" class="inputStyle mb-2" id="phone_home"
+                            name="phone_home">
+                        <br>
+                        <input type="text" placeholder="Phone Call" class="inputStyle mb-2" id="phone_cell"
+                            name="phone_cell">
+                            <br>
+                        <input type="text" placeholder="Phone Work" class="inputStyle mb-2" id="phone_work"
+                            name="phone_work">
+                            <br>
+                        <input type="text" placeholder="Phone Ext" class="inputStyle mb-2" id="phone_ext"
+                            name="phone_ext"><br>
+                        <input type="text" placeholder="Address" class="inputStyle mb-2" id="address" name="address"><br>
+                        <input type="text" placeholder="address 2" class="inputStyle mb-2" id="address2" name="address2"><br>
+                        <input type="text" placeholder="City" class="inputStyle mb-2" id="city" name="city"><br>
+                        <input type="text" placeholder="State" class="inputStyle mb-2" id="state" name="state"><br>
+                    </div>
+                    <h4>Beverly Hills, CA 90210</h4>
+                      <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                       I agree to the privacy policy within this site.<br>
+                      <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+                      I agree to receive relevant daily emails from Insurance Specialists
+                    <br>
+                    <!-- <input type="button" name="previous" class="previous action-button" value="Previous" /> -->
+                    <input type="submit" name="next" class="next action-button" />
+                </fieldset>
+                <input type="hidden" id="lp_response" name="lp_response">
+                <input type="hidden" id="trusted_form_cert_id" name="trusted_form_cert_id">
+
+                <input type="hidden" id="data" name="ip_address"><br><br>
+                <input type="hidden" id="lp_campaign_id" name="lp_campaign_id" value="60cb3d4a1ed8b">
+                <input type="hidden" name="lp_redirect_url" value="https://www.w3schools.com/" />
+                <input type="hidden" name="lp_redirect_fail_url" value="https://www.youtube.com/watch?v=RGKi6LSPDLU" /> 
+
+               <!--  <input type="hidden" id="lp_campaign_key" name="lp_campaign_key" value="BNxQZCHK4b267wdGXhgt"> -->
+
+                <input type="hidden" id="lp_s1" name="lp_s1" value="test">
+
+                <input type="hidden" id="lp_s2" name="lp_s2" value="test">
+
+                <input type="hidden" id="lp_s3" name="lp_s3" value="test">
+
+                <input type="hidden" id="lp_s4" name="lp_s4" value="test">
+
+                <input type="hidden" id="lp_s5" name="lp_s5" value="test">
+
+                <input type="hidden" id="lp_test" name="lp_test" value="test">
+                <input type="hidden" id="landing_page" name="landing_page" value="https://eeltracklp.leadspediatrack.com/posting-instructions.html?c=4&type=Form">
+                <input type="hidden" id="tcpa_consent_text" name="tcpa_consent_text" value="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus saepe laudantium quisquam
+                commodi, ullam esse doloribus temporibus reiciendis. Reiciendis voluptate optio modi vero nemo officiis
+                et accusamus iure error odit? Cupiditate suscipit tempore modi repellat blanditiis a? Quis accusantium
+                magnam accusamus corporis, ipsam voluptatem quod iusto at maiores odio architecto?">
+                <input type="hidden" id="user_agent" name="user_agent" value="nill">
+            </form>
+        </div>
+    </div>
+
+    <footer class="container-fluid bg-dark">
+        <div class="text-center text-white p-5">Footer Of Insurance Form</div>
+        <div class="text-white">
+            <p class="text-center p-5 pt-0 mb-0">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus saepe laudantium quisquam
+                commodi, ullam esse doloribus temporibus reiciendis. Reiciendis voluptate optio modi vero nemo officiis
+                et accusamus iure error odit? Cupiditate suscipit tempore modi repellat blanditiis a? Quis accusantium
+                magnam accusamus corporis, ipsam voluptatem quod iusto at maiores odio architecto?
+            </p>
+        </div>
+    </footer>
+
+
+    <!-- Adding Script -->
+    <!-- /.MultiStep Form -->
+    <!-- jQuery -->
+    <script>
+
+    function detectBrowser() {
+    let user_agent; 
+     if((navigator.userAgent.indexOf("Opera") || navigator.userAgent.indexOf('OPR')) != -1 ) 
+
+    {
+       // document.getElementById('user_agent');
+       user_agent="OPera";
+    }
+    else if(navigator.userAgent.indexOf("Chrome") != -1 )
+    {
+       // document.getElementById('user_agent');   
+       user_agent="Chrome";
+        }
+    else if(navigator.userAgent.indexOf("Safari") != -1)
+    {
+       user_agent="Safari";    
+    }
+    else if(navigator.userAgent.indexOf("Firefox") != -1 ) 
+    {
+          // document.getElementById('user_agent');
+          user_agent="Firefox";
+    }
+    else if((navigator.userAgent.indexOf("Microsoft Edge") != -1 ) || (!!document.documentMode == true )) //IF IE > 10
+    {
+      user_agent="Microsoft Edge";
+    }  
+    else 
+    {
+       user_agent="Unknown";
+    }
+   document.getElementById('user_agent').value=user_agent;
+   // alert(user_agent);
+   console.log(document.getElementById('user_agent').value);
+    }
+    </script> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js" type="text/javascript"></script>
+    <!-- jQuery easing plugin -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"
+        type="text/javascript"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+        crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+
+        //jQuery time
+        var current_fs, next_fs, previous_fs; //fieldsets
+        var left, opacity, scale; //fieldset properties which we will animate
+        var animating; //flag to prevent quick multi-click glitches
+
+        $(".next").click(function () {
+            if (animating) return false;
+            animating = true;
+
+            current_fs = $(this).parent();
+            next_fs = $(this).parent().next();
+
+            //activate next step on progressbar using the index of next_fs
+            $("#progressbar li").eq($("fieldset").index(next_fs)).addClass("active");
+
+            //show the next fieldset
+            next_fs.show();
+            //hide the current fieldset with style
+            current_fs.animate({ opacity: 0 }, {
+                step: function (now, mx) {
+                    //as the opacity of current_fs reduces to 0 - stored in "now"
+                    //1. scale current_fs down to 80%
+                    scale = 1 - (1 - now) * 0.2;
+                    //2. bring next_fs from the right(50%)
+                    left = (now * 50) + "%";
+                    //3. increase opacity of next_fs to 1 as it moves in
+                    opacity = 1 - now;
+                    current_fs.css({
+                        'transform': 'scale(' + scale + ')',
+                        'position': 'absolute'
+                    });
+                    next_fs.css({ 'left': left, 'opacity': opacity });
+                },
+                duration: 800,
+                complete: function () {
+                    current_fs.hide();
+                    animating = false;
+                },
+                //this comes from the custom easing plugin
+                easing: 'easeInOutBack'
+            });
+        });
+
+        // $(".previous").click(function () {
+        //     if (animating) return false;
+        //     animating = true;
+
+        //     current_fs = $(this).parent();
+        //     previous_fs = $(this).parent().prev();
+
+        //     //de-activate current step on progressbar
+        //     $("#progressbar li").eq($("fieldset").index(current_fs)).removeClass("active");
+
+        //     //show the previous fieldset
+        //     previous_fs.show();
+        //     //hide the current fieldset with style
+        //     current_fs.animate({ opacity: 0 }, {
+        //         step: function (now, mx) {
+        //             //as the opacity of current_fs reduces to 0 - stored in "now"
+        //             //1. scale previous_fs from 80% to 100%
+        //             scale = 0.8 + (1 - now) * 0.2;
+        //             //2. take current_fs to the right(50%) - from 0%
+        //             left = ((1 - now) * 50) + "%";
+        //             //3. increase opacity of previous_fs to 1 as it moves in
+        //             opacity = 1 - now;
+        //             current_fs.css({ 'left': left });
+        //             previous_fs.css({ 'transform': 'scale(' + scale + ')', 'opacity': opacity });
+        //         },
+        //         duration: 800,
+        //         complete: function () {
+        //             current_fs.hide();
+        //             animating = false;
+        //         },
+        //         //this comes from the custom easing plugin
+        //         easing: 'easeInOutBack'
+        //     });
+        // });
+
+        // Skip some of the steps below
+        $("#ifyes").click(function () {
+            $("#home_21").show();
+            $("#home_20").hide();
+        });
+        $("#ifno").click(function () {
+            $("#home_23").show();
+            $("#home_20").hide();
+        });
+        $("#interested").click(function () {
+            $("#home_44").show();
+            $("#home_43").hide();
+        });
+        $("#notinterested").click(function () {
+            $("#home_46").show();
+            $("#home_43").hide();
+        });
+    </script>
+    <script type="text/javascript">
+        (function () {
+            var field = 'trusted_form_cert_id';
+            var provideReferrer = false;
+            var invertFieldSensitivity = false;
+            var tf = document.createElement('script');
+            tf.type = 'text/javascript'; tf.async = true;
+            tf.src = 'http' + ('https:' == document.location.protocol ? 's' : '') +
+                '://api.trustedform.com/trustedform.js?provide_referrer=' + escape(provideReferrer) + '&field=' + escape(field) + '&l=' + new Date().getTime() + Math.random() + '&invert_field_sensitivity=' + invertFieldSensitivity;
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(tf, s);
+        }
+        )();
+    </script>
+    <noscript>
+        <img src="http://api.trustedform.com/ns.gif" />
+    </noscript>
+
+    <script type="text/javascript">
+
+        $.getJSON("https://api.ipify.org?format=json", function (data) {
+
+            $("#ip").html(data.ip);
+
+        })
+
+    </script>
+    <script>
+        $('#datepicker').datepicker({
+            uiLibrary: 'bootstrap4'
+        });
+    </script>
+    <script>
+        
+      
+        function storeurl() {
+            var url_string = document.URL; //window.location.href
+            var url = new URL(url_string);
+            var affid = url.searchParams.get("affid");
+            console.log("value",affid);
+            var tid = url.searchParams.get("tid"); 
+            console.log("value",tid);
+            document.getElementById('lp_s1').value = affid;
+            console.log( document.getElementById('lp_s1').value);
+            document.getElementById('lp_s2').value = tid;
+            console.log( document.getElementById('lp_s2').value);
+            
+        }
+    </script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
+<script type="text/javascript">
+    $.getJSON("https://api.ipify.org?format=json", function(data){
+        $("#data").html(data.ip);
+    })
+</script>
+
+</body>
+
+</html>
